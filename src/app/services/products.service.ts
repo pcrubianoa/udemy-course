@@ -14,7 +14,7 @@ loaded: boolean = true;
   public load_products() {
       this.http.get('https://portafolio-c0285.firebaseio.com/products_idx.json')
       .subscribe(res => {
-        console.log( res.json() );
+        // console.log( res.json() );
         this.loaded = false;
         this.products = res.json();
       });
