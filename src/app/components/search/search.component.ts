@@ -10,8 +10,8 @@ export class SearchComponent {
 
   word: string = undefined;
 
-  constructor( private route: ActivatedRoute,
-              private _ps: ProductsService ) {
+  constructor( public route: ActivatedRoute,
+              public _ps: ProductsService ) {
     route.params.subscribe(parametros => {
       this.word = parametros['word'];
       console.log(this.word);
